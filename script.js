@@ -10,9 +10,11 @@ let year = document.querySelector("#year");
 let mode = document.querySelector(".form-check-input");
 let body = document.querySelector('body');
 let hed = document.querySelector(".hed");
-
+//Array for Months.
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+//Array for Days.
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//function for clock.
 function updateClock () {
     const date = new Date();
     day.innerText = daysOfWeek[date.getDay()];
@@ -24,7 +26,9 @@ function updateClock () {
     h.innerText = (date.getHours()<10? "0" + date.getHours() : date.getHours());
     const period = date.getHours()>=12? dn.innerText = "pm" : dn.innerText = "am";
 }
-setInterval(updateClock,1000);
+setInterval(updateClock,1000);//update clock every second.
+
+//mode change feature
 let n = 0;
 mode.addEventListener("click",()=>{
     if(n == 0){
