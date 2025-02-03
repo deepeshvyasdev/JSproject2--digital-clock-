@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: gray;
+}
+.hed {
+    
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-family: "Geo", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.form-check{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.container {
+    height: 66vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    
+}
+.clock_body {
+    background-color: white;
+    height: 20vh;
+    width: 30vw;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.date {
+    padding-top: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.time {
+    font-size: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#dn {
+    font-size: 20px;
+    font-weight: 600;
+}
+@media (max-width : 900px){
+    .time {
+        font-size: 50px;
+    }
+}
+@media (max-width : 760px){
+    .time {
+        font-size: 40px;
+    }
+    .clock_body {
+        height: 15vh;
+    }
+}
+@media (max-width : 690px){
+    .clock_body {
+        height: 97px;
+        width: 216px;
+    }
+}
